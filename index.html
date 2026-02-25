@@ -6,86 +6,142 @@
 <title>My Digital Services</title>
 
 <style>
-body{
-  font-family:Arial;
-  background:#f4f7fb;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:0;
   padding:0;
-  text-align:center;
+  background:#f0f4f8;
+  color:#333;
 }
 
-header{
-  background:#0b5ed7;
+header {
+  background: linear-gradient(90deg, #0b5ed7, #2a9df4);
   color:white;
-  padding:40px;
+  text-align:center;
+  padding:60px 20px;
 }
 
-section{
-  padding:40px;
+header h1 {
+  margin:0;
+  font-size:2.5em;
 }
 
-.card{
+header p {
+  margin-top:10px;
+  font-size:1.2em;
+}
+
+section.services {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.card {
   background:white;
-  margin:20px auto;
-  padding:20px;
-  max-width:400px;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  margin:15px;
+  padding:25px;
+  width:280px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  text-align:center;
+  transition: transform 0.2s;
 }
 
-button{
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width:60px;
+  margin-bottom:15px;
+}
+
+.card h2 {
+  font-size:1.3em;
+  margin-bottom:5px;
+}
+
+.card .price {
+  font-size:1.1em;
+  font-weight:bold;
+  color:#0b5ed7;
+  margin-bottom:10px;
+}
+
+.card p {
+  font-size:0.95em;
+  margin-bottom:15px;
+  color:#555;
+}
+
+button {
   background:#0b5ed7;
   color:white;
   border:none;
-  padding:15px 25px;
-  font-size:16px;
-  border-radius:5px;
+  padding:12px 20px;
+  font-size:1em;
+  border-radius:6px;
   cursor:pointer;
+  transition: background 0.2s;
 }
 
-footer{
-  margin-top:40px;
-  padding:20px;
-  background:#eee;
+button:hover {
+  background:#0746a2;
 }
 
-.refund-policy{
-  max-width:600px;
-  margin:20px auto;
-  text-align:left;
+.refund-policy {
+  max-width:700px;
+  margin:30px auto;
   padding:20px;
-  background:#fff;
+  background:white;
   border-radius:10px;
   box-shadow:0 0 10px rgba(0,0,0,0.1);
+  text-align:left;
+}
+
+footer {
+  margin-top:40px;
+  padding:25px 20px;
+  background:#e1e4e8;
+  text-align:center;
+  font-size:0.9em;
+  color:#555;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
 <h1>My Digital Services</h1>
-<p>Professional Digital Services Website</p>
+<p>Professional Digital Services for Your Business</p>
 </header>
 
-<section>
+<section class="services">
 
 <div class="card">
+<img src="https://img.icons8.com/ios-filled/100/0b5ed7/web.png" alt="Website Icon">
 <h2>Website Creation</h2>
-<p>Professional website creation for business and personal use.</p>
+<div class="price">$50</div>
+<p>Custom websites tailored for your business or personal needs.</p>
 <button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK1'">Order Service</button>
 </div>
 
 <div class="card">
+<img src="https://img.icons8.com/ios-filled/100/0b5ed7/design.png" alt="Logo Icon">
 <h2>Logo Design</h2>
-<p>Unique and professional logo design.</p>
+<div class="price">$25</div>
+<p>Professional and unique logos to make your brand stand out.</p>
 <button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK2'">Order Service</button>
 </div>
 
 <div class="card">
+<img src="https://img.icons8.com/ios-filled/100/0b5ed7/social-media.png" alt="Social Media Icon">
 <h2>Social Media Services</h2>
-<p>Professional social media management.</p>
+<div class="price">$40</div>
+<p>Manage your social media with professional content and strategies.</p>
 <button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK3'">Order Service</button>
 </div>
 
@@ -94,7 +150,7 @@ footer{
 <!-- Refund Policy Section -->
 <section class="refund-policy">
 <h3>Refund Policy</h3>
-<p>All digital services are delivered electronically. Refunds are available only if the service is not delivered as described or technical issues prevent usage. Contact us within 7 days for any refund request.</p>
+<p>All digital services are delivered electronically. Refunds are available only if the service is not delivered as described or technical issues prevent usage. Please contact us within 7 days for any refund request.</p>
 </section>
 
 <footer>
