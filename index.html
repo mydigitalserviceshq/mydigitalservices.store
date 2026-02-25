@@ -1,162 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Digital Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin:0;
-  padding:0;
-  background:#f0f4f8;
-  color:#333;
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f7fb;
 }
 
-header {
-  background: linear-gradient(90deg, #0b5ed7, #2a9df4);
-  color:white;
-  text-align:center;
-  padding:60px 20px;
+nav{
+background:#0b5ed7;
+padding:15px;
 }
 
-header h1 {
-  margin:0;
-  font-size:2.5em;
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
 }
 
-header p {
-  margin-top:10px;
-  font-size:1.2em;
+header{
+padding:60px;
+text-align:center;
+background:white;
 }
 
-section.services {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  padding:40px 20px;
+section{
+padding:40px;
+text-align:center;
 }
 
-.card {
-  background:white;
-  margin:15px;
-  padding:25px;
-  width:280px;
-  border-radius:12px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-  text-align:center;
-  transition: transform 0.2s;
+.button{
+background:#0b5ed7;
+color:white;
+padding:15px 25px;
+text-decoration:none;
+border-radius:5px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+footer{
+background:#eee;
+padding:20px;
+text-align:center;
 }
 
-.card img {
-  width:60px;
-  margin-bottom:15px;
-}
-
-.card h2 {
-  font-size:1.3em;
-  margin-bottom:5px;
-}
-
-.card .price {
-  font-size:1.1em;
-  font-weight:bold;
-  color:#0b5ed7;
-  margin-bottom:10px;
-}
-
-.card p {
-  font-size:0.95em;
-  margin-bottom:15px;
-  color:#555;
-}
-
-button {
-  background:#0b5ed7;
-  color:white;
-  border:none;
-  padding:12px 20px;
-  font-size:1em;
-  border-radius:6px;
-  cursor:pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background:#0746a2;
-}
-
-.refund-policy {
-  max-width:700px;
-  margin:30px auto;
-  padding:20px;
-  background:white;
-  border-radius:10px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
-  text-align:left;
-}
-
-footer {
-  margin-top:40px;
-  padding:25px 20px;
-  background:#e1e4e8;
-  text-align:center;
-  font-size:0.9em;
-  color:#555;
-}
 </style>
 </head>
 
 <body>
 
+<nav>
+
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="refund.html">Refund</a>
+
+</nav>
+
 <header>
+
 <h1>My Digital Services</h1>
-<p>Professional Digital Services for Your Business</p>
+
+<p>Professional Digital Services for clients worldwide</p>
+
+<a href="services.html" class="button">View Services</a>
+
 </header>
 
-<section class="services">
+<section>
 
-<div class="card">
-<img src="https://img.icons8.com/ios-filled/100/0b5ed7/web.png" alt="Website Icon">
-<h2>Website Creation</h2>
-<div class="price">$50</div>
-<p>Custom websites tailored for your business or personal needs.</p>
-<button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK1'">Order Service</button>
-</div>
+<h2>Welcome</h2>
 
-<div class="card">
-<img src="https://img.icons8.com/ios-filled/100/0b5ed7/design.png" alt="Logo Icon">
-<h2>Logo Design</h2>
-<div class="price">$25</div>
-<p>Professional and unique logos to make your brand stand out.</p>
-<button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK2'">Order Service</button>
-</div>
+<p>
 
-<div class="card">
-<img src="https://img.icons8.com/ios-filled/100/0b5ed7/social-media.png" alt="Social Media Icon">
-<h2>Social Media Services</h2>
-<div class="price">$40</div>
-<p>Manage your social media with professional content and strategies.</p>
-<button onclick="window.location.href='https://capitalist.net/pay/YOUR_PAYMENT_LINK3'">Order Service</button>
-</div>
+We provide professional digital services including website creation, logo design, and social media management.
 
-</section>
+Secure payments via Capitalist.
 
-<!-- Refund Policy Section -->
-<section class="refund-policy">
-<h3>Refund Policy</h3>
-<p>All digital services are delivered electronically. Refunds are available only if the service is not delivered as described or technical issues prevent usage. Please contact us within 7 days for any refund request.</p>
+</p>
+
 </section>
 
 <footer>
-<p>Secure payments powered by Capitalist</p>
-<p>Domain: mydigitalservices.store</p>
-<p>Email: support@mydigitalservices.store</p>
+
+support@mydigitalservices.store
+
 </footer>
 
 </body>
