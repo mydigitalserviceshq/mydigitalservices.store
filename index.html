@@ -1,55 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Digital Services</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Digital Services | Professional Digital Solutions</title>
 
 <style>
 
 body{
-font-family:Arial;
 margin:0;
+font-family:Segoe UI, Arial;
 background:#f4f7fb;
+color:#333;
 }
+
+/* Navigation */
 
 nav{
 background:#0b5ed7;
 padding:15px;
+position:sticky;
+top:0;
 }
 
 nav a{
 color:white;
 margin:15px;
 text-decoration:none;
+font-weight:600;
+}
+
+/* Hero Section */
+
+.hero{
+background:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') center/cover no-repeat;
+height:500px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+background:rgba(0,0,0,0.5);
+padding:20px;
+border-radius:10px;
+}
+
+/* Services */
+
+.services{
+padding:50px;
+text-align:center;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px auto;
+max-width:350px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.price{
+color:#0b5ed7;
+font-size:22px;
 font-weight:bold;
 }
 
-header{
-padding:60px;
+/* Testimonials */
+
+.testimonials{
+background:#eef2f7;
+padding:50px;
 text-align:center;
-background:white;
 }
 
-section{
-padding:40px;
+.testimonial{
+max-width:600px;
+margin:20px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+}
+
+/* Footer */
+
+footer{
+background:#0b5ed7;
+color:white;
+padding:20px;
 text-align:center;
 }
 
 .button{
 background:#0b5ed7;
 color:white;
-padding:15px 25px;
+padding:12px 20px;
 text-decoration:none;
 border-radius:5px;
-}
-
-footer{
-background:#eee;
-padding:20px;
-text-align:center;
+display:inline-block;
+margin-top:10px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -61,36 +125,103 @@ text-align:center;
 <a href="about.html">About</a>
 <a href="contact.html">Contact</a>
 <a href="refund.html">Refund</a>
+<a href="privacy.html">Privacy</a>
 
 </nav>
 
-<header>
+<section class="hero">
 
-<h1>My Digital Services</h1>
+<h1>Professional Digital Services for Your Business</h1>
 
-<p>Professional Digital Services for clients worldwide</p>
+</section>
 
-<a href="services.html" class="button">View Services</a>
+<section class="services">
 
-</header>
+<h2>Our Popular Services</h2>
 
-<section>
+<div class="card">
 
-<h2>Welcome</h2>
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
+
+<h3>Website Creation</h3>
+
+<p class="price">$50</p>
+
+<p>
+Professional responsive websites delivered within 3 business days.
+</p>
+
+<a href="services.html" class="button">Order Now</a>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0">
+
+<h3>Logo Design</h3>
+
+<p class="price">$25</p>
+
+<p>
+Unique professional logo design for your business.
+</p>
+
+<a href="services.html" class="button">Order Now</a>
+
+</div>
+
+</section>
+
+<section class="testimonials">
+
+<h2>Customer Reviews</h2>
+
+<div class="testimonial">
 
 <p>
 
-We provide professional digital services including website creation, logo design, and social media management.
-
-Secure payments via Capitalist.
+"Excellent service. My website was delivered on time and works perfectly."
 
 </p>
+
+<strong>— Michael R., USA</strong>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"Professional and fast logo design. Highly recommended."
+
+</p>
+
+<strong>— Anna K., Germany</strong>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+
+"Great communication and secure payment process."
+
+</p>
+
+<strong>— David S., UK</strong>
+
+</div>
 
 </section>
 
 <footer>
 
-support@mydigitalservices.store
+<p>My Digital Services</p>
+
+<p>Email: support@mydigitalservices.store</p>
+
+<p>Secure payments via Capitalist</p>
 
 </footer>
 
